@@ -1,3 +1,5 @@
+import "./style.css"
+
 interface GlossProps{ //tudo que vai ser alterado 
     name: string;
     price: string;
