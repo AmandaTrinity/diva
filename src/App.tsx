@@ -3,14 +3,21 @@ import GlossFrancine from "./assets/gloss_francisca.png"
 import GlossMariMaria from "./assets/gloss_marimaria.png"
 import GlossKiko from "./assets/gloss_kiko.png"
 import Gloss from "./components/gloss";
+import { useState } from 'react';
 
 //componente da nossa tela principal
 function App() {
+
+  const [busca, setBusca] = useState("");
+
   const GlossList = [
     {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
     {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
     {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
   ]
+
+  const GlossFilter = GlossList
+  .filter((one_gloss) => one_gloss.name.toLocaleLowerCase().includes(busca.toLocaleLowerCase()));
 
   return (
     <div className="App">
@@ -19,12 +26,16 @@ function App() {
           Loja de Gloss
         </p>
       </header>
-
+      <input 
+      type='text'
+      value={busca}
+       onChange={(e) => setBusca(e.target.value)}
+      />
       <div className='"content'>
 
         <div className='card-container'>
 
-          {GlossList.map((gloss) => (
+          {GlossFilter.map((gloss) => (
             <Gloss
               imageUrl={gloss.imageUrl}
               price={gloss.price}
