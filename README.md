@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# 💄 Diva - Loja de Gloss
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Uma interface de e-commerce para uma loja de gloss, desenvolvida com React e TypeScript.
 
-## Available Scripts
+Este projeto foi criado como parte do desafio da 3ª edição do curso de desenvolvimento web da **< div >a**, uma comunidade de meninas da subárea de desenvolvimento do [CITi](https://citi.org.br/) (Empresa Júnior do CIn-UFPE).
 
-In the project directory, you can run:
+O objetivo era aplicar conceitos de React e JavaScript para construir uma aplicação web funcional e responsiva.
 
-### `npm start`
+## ✨ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Listagem de Produtos:** Exibe os glosses disponíveis com imagem, nome e preço.
+- **Busca Dinâmica:** Filtra os produtos em tempo real conforme o usuário digita.
+- **Design Responsivo:** O layout se adapta a diferentes tamanhos de tela, de celulares a desktops.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm test`
+- **React** - Biblioteca para construir a interface de usuário.
+- **TypeScript** - Para adicionar tipagem estática e melhorar a qualidade do código.
+- **CSS** - Estilização com Flexbox, Grid Layout e Media Queries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏁 Como Executar o Projeto
 
-### `npm run build`
+Siga os passos abaixo para rodar a aplicação localmente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Você vai precisar ter o Node.js instalado na sua máquina. O `pnpm` é o gerenciador de pacotes usado neste projeto, mas você também pode usar `npm` ou `yarn`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instalação
 
-### `npm run eject`
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/diva.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd diva
+   ```
+3. Instale as dependências:
+   ```sh
+   pnpm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Rodando a Aplicação
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para iniciar o servidor de desenvolvimento, execute:
+```sh
+pnpm start
+```
+Abra http://localhost:3000 no seu navegador para ver o resultado.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
