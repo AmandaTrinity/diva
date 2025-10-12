@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-.app {
+.App {
   text-align: center;
 }
 
@@ -34,4 +34,15 @@ header {
   display: flex;
   gap: 20px;
   border: 3-x solid black;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(61, 5, 61);
+  margin: 20px 0px;
+  padding: 0px 10px;
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
