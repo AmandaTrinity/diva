@@ -1,4 +1,5 @@
 import './App.css';
+import IconBusca from "./assets/lipstick.png"
 import GlossFrancine from "./assets/gloss_francisca.png"
 import GlossMariMaria from "./assets/gloss_marimaria.png"
 import GlossKiko from "./assets/gloss_kiko.png"
@@ -14,6 +15,12 @@ function App() {
     {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
     {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
     {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
+    {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
+    {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
+    {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
+    {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
+    {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
+    {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
   ]
 
   const GlossFilter = GlossList
@@ -26,12 +33,16 @@ function App() {
           Loja de Gloss
         </p>
       </header>
-      <input 
-      type='text'
-      value={busca}
-       onChange={(e) => setBusca(e.target.value)}
-      />
-      <div className='"content'>
+      <div className='search-container'> 
+        <img src={IconBusca} className='icon' />
+        <input 
+        type='text'
+        value={busca}
+        onChange={(e) => setBusca(e.target.value)}
+        />
+      </div>
+
+      <div className='content'>
 
         <div className='card-container'>
 
