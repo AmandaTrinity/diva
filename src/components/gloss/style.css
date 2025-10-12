@@ -1,0 +1,31 @@
+.loja-box {
+    border: 1.2px solid #c80dee;
+    border-radius: 20px;
+    width: 240px;
+    overflow: hidden;
+    gap: 10px;
+    margin: 10px;
+}
+
+.image {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.loja-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0;
+}
