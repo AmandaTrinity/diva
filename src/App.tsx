@@ -1,7 +1,10 @@
 import './App.css';
 import IconBusca from "./assets/lipstick.png"
 import GlossFrancine from "./assets/gloss_francisca.png"
+import GlossMac from "./assets/mac.png"
 import GlossMariMaria from "./assets/gloss_marimaria.png"
+import GlossNinaSecrets from "./assets/nina_secrets.png"
+import GlossOceane from "./assets/oceane.png"
 import GlossKiko from "./assets/gloss_kiko.png"
 import Gloss from "./components/gloss";
 import { useState } from 'react';
@@ -15,12 +18,9 @@ function App() {
     {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
     {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
     {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
-    {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
-    {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
-    {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
-    {imageUrl: GlossFrancine, price:"80",name:"Gloss Francisca"},
-    {imageUrl: GlossMariMaria, price:"100",name:"Gloss Mari Maria"},
-    {imageUrl: GlossKiko, price:"70",name:"Gloss Kiko"},
+    {imageUrl: GlossMac ,price:"120",name:"Gloss Mac"},
+    {imageUrl: GlossNinaSecrets, price:"99",name:"Gloss Nina Secrets"},
+    {imageUrl: GlossOceane, price:"150",name:"Gloss Oceane"},
   ]
 
   const GlossFilter = GlossList
